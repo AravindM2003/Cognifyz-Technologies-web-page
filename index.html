@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+</head>
+<body>
+    <body>
+        <div class="hero">
+        <nav>
+            <h2 class="logo">Cognifyz</h2>
+            <ul>
+                <li><a href="https://cognifyz.com/courses"> Home </a></li>
+                <li><a href="https://cognifyz.com/courses"> About Us</a></li>
+                <li><a href="https://cognifyz.com/services/"> Services</a></li>
+                <li><a href="https://cognifyz.com/courses/"> Courses </a></li>
+                <li><a href="https://cognifyz.com/courses"> Internships </a></li>
+                <li><a href="https://cognifyz.com/blog/"> Blog </a></li>
+                <li><a href="https://cognifyz.com/contact-us/"> Contact Us </a></li>
+            </ul>
+        </nav>
+
+<!--Starting of Landing page-->
+
+  <section id="landing">
+      <div class="image">
+        <div class="texting">
+            <h1>Empowering the way of <span>Education</span></h1>
+            <p>EnlightenHub: Bridging educational gaps. Providing inclusive, accessible <br>resources 
+                to empower learners worldwide, fostering growth, and enabling <br>individuals to  
+                excel in diverse contexts.Empowering learners to reach<br> their full potential 
+                and thrive in a diverse world.</p>
+            <br>
+            <input type="button" id="btnShowMsg" value="Get Started" onClick="sendMessage()" />
+        </div>
+        <img src="image1.png" alt="image1" width="35%" height="20%">
+        <script src="script.js"></script>
+    </div>
+    </div>
+
+    </section>
+<div class="text">
+  <h1>Lets Check ?</h1>
+</div>
+<br><br>
+   <section id="up-next">
+    <div class="box">
+      <br>
+    <label for="input1">Input 1</label>
+    <input type="text" id="input1" value="0"><br>
+    
+    <label for="input2">Input 2</label>
+    <input type="text" id="input2" value="0"><br>
+    
+    <label for="total">Total</label>
+    <input type="text" id="total" value="0" readonly><br>
+    <br>
+    <input type="button" value="Add" onclick="add()">
+    <input type="button" value="Reset" onclick="reset()"/>
+    <br>
+    </div>
+    <script>
+      function reset(){
+        document.getElementById("input1").value="0";
+        document.getElementById("input2").value="0";
+        document.getElementById("total").value="0";
+      }
+    
+      function add(){
+        var input1=Number(document.getElementById("input1").value);
+        var input2=Number(document.getElementById("input2").value);
+        var sum=input1+input2;
+        document.getElementById("total").value=String(sum);
+      }
+    </script>
+</section>
+
+<section>
+    
+<div class="form-popup" id="myForm">
+  <form  class="form-container">
+    
+    <h1>Subscribe</h1>
+<br>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <button type="submit" class="btn">Subscribe</button>
+  </form>
+</div>
+
+</section>
+
+
+<footer> 
+  <div class="footer">
+    <div class="class">
+    <a href="https://cognifyz.com/"><i class="fa fa-facebook"></i></a>
+    <a href="https://cognifyz.com/"><i class="fa fa-instagram"></i></a>
+    <a href="https://cognifyz.com/"><i class="fa fa-youtube"></i></a>
+    <a href="https://cognifyz.com/"><i class="fa fa-twitter"></i></a>
+    </div>
+    
+    <div class="class">
+      2024 © All rights reserved by Tizen Technologies 
+    </div>
+    </div>
+</footer>
